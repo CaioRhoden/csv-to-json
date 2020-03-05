@@ -131,7 +131,22 @@ function getAdresses(lineInfo, fields) {
       }
     }
   }
-  return adressesArr;
+  //create a new array with no repeated emails or phone numbers
+  finalAdress = [];
+  for (j = 0; j < adressesArr.length; j++) {
+    let rep = false;
+    for (k = j + 1; k < adressesArr.length; k++) {
+      if (
+        adressesArr[k]["adress"].localeCompare(adressesArr[j]["adress"]) == 0
+      ) {
+        rep = true;
+      }
+    }
+    if (rep == false) {
+      finalAdress.push(adressesArr[j]);
+    }
+  }
+  return finalAdress;
 }
 
 //find the index of see_all and get its value
@@ -267,7 +282,6 @@ function main() {
     }
     results = makeLineDict(fields, data[i], results);
   }
-
   //json writing
   let output = JSON.stringify(results);
   var fs = require("fs");
