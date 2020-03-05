@@ -267,6 +267,8 @@ function main() {
     }
     results = makeLineDict(fields, data[i], results);
   }
+
+  //json writing
   let output = JSON.stringify(results);
   var fs = require("fs");
   fs.writeFileSync("output.json", output);
