@@ -1,0 +1,25 @@
+{
+  "name": "csv-to-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaioRhoden/csv-to-json.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaioRhoden/csv-to-json/issues"
+  },
+  "homepage": "https://github.com/CaioRhoden/csv-to-json#readme",
+  "dependencies": {
+    "FileReader": "^0.10.2",
+    "csv": "^0.3.7",
+    "filereader": "^0.10.3",
+    "google-libphonenumber": "^3.2.7"
+  }
+}
