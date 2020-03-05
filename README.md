@@ -1,4 +1,4 @@
-# csv-to-json
+# csv-to-json Steps:
+npm install
 
-## External modules
-npm install --save csv@0.3.7
+npm start
