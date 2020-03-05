@@ -1,4 +1,4 @@
 # csv-to-json Steps:
-npm install
+sudo npm install
 
-npm start
+sudo npm start
