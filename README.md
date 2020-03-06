@@ -1,7 +1,7 @@
 # Steps:
-sudo npm install
+npm install
 
-sudo npm start
+node index.js
 # Packages
 
 google-libphonenumber
